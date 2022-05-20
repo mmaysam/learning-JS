@@ -46,19 +46,64 @@
 // 🎇🎇🎇🎇🎇truthy and falsy
 // falsy valuse are not actually false but will become false when we convert them to boolean
 // 5 falsy values :{ 0, '' embty string , undefined , null , NaN }
-console.log(Boolean(0)); //>> false 
-console.log(Boolean(undefined))//>> false 
-console.log(Boolean('maysam'));//>> true
-console.log(Boolean({}));//>> this is an impty object so it's  true.
+//console.log(Boolean(0)); //>> false 
+//console.log(Boolean(undefined))//>> false 
+//console.log(Boolean('maysam'));//>> true
+//console.log(Boolean({}));//>> this is an impty object so it's  true.
 
 
 // 🎇🎇🎇🎇🎇🎇 equality operators == vs ===    Q=9
 
-const age = 18;
-if (age === 18) console.log('you are an adult 🎉'); //strict equality have to be the same if its a number it have to be a number in the if statment to be TRUE 🎈 best practice 🎈
+// const age = 18;
+// if (age === 18) console.log('you are an adult 🎉'); //strict equality have to be the same if its a number it have to be a number in the if statment to be TRUE 🎈 best practice 🎈
 
-if (age == 18) console.log('you are an adult 🎉');
-// LOOSE equality it doesn't matter if the variable is a number or a string it will be true 
+// if (age == 18) console.log('you are an adult 🎉');
+// // LOOSE equality it doesn't matter if the variable is a number or a string it will be true 
+
+// const favourite =Number( prompt("what is your favorite number"));
+// if (favourite === 23){
+//     console.log('cool is beeautiful');
+// }else if ( favourite === 7){
+//     console.log('7 is cool too');
+// }else {
+//     console.log('nimber is not 23 ot 7s')
+// }
+
+// if (favourite !== 23 ) console.log('leeeh la2 ')
 
 
+// logical operator ✨
+// ++
+const hasDrivesLicense = false;
+const hasGoodVision = true;
 
+console.log(hasDrivesLicense && hasGoodVision);
+console.log(hasDrivesLicense || hasGoodVision);
+console.log(!hasDrivesLicense); // ! means not 
+
+// const shouldDrive = (hasDrivesLicense && hasGoodVision);
+  if (shouldDrive) {
+      console.log('you can drive');
+  }else {
+      console.log('sorry you cant drive');
+  }
+
+// 🎈
+// const hasDrivesLicense = false;
+// const hasGoodVision = true;
+
+console.log(hasDrivesLicense && hasGoodVision);
+console.log(hasDrivesLicense || hasGoodVision);
+
+  const isTired = true;
+  console.log(hasDrivesLicense || hasGoodVision || isTired);
+
+
+const shouldDrive = (hasDrivesLicense && hasGoodVision !== isTired);
+  if (shouldDrive) {
+      console.log('you can drive');
+  }else {
+      console.log('sorry you cant drive');
+  }
+
+// ✨✨✨✨✨
